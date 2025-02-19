@@ -98,6 +98,31 @@ button {
 	align-items: center;
 }
 
+.bouton-tableaux {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	grid-gap: 10px;
+	position: absolute;
+	
+}
+
+.btn-tableaux {
+	background-color: red;
+	padding: 40px;
+	border-radius: 100%;
+}
+
+.tableaux .blc {
+	z-index: 4;
+	position: absolute;
+}
+.tableaux .noir {
+	z-index: 3;
+	position: relative;
+	bottom: 2px;
+}
+
 /* .partie2 {
     display: flex;
     justify-content: center;
