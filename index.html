@@ -1,94 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/normalize.css" />
-		<link rel="stylesheet" href="./css/main.css" />
-		<title>Document</title>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<button>MENU</button>
-				<img src="./assets/Group 12.svg" alt="logo-game" />
-				<button>RESTART</button>
-			</nav>
-		</header>
-
-		<main>
-			<section class="partie1">
-				<div class="score">
-					<img src="./assets/player-one.svg" alt="player1" />
-					<div class="player">
-						<h2>PLAYER 1</h2>
-						<p>12</p>
-					</div>
-				</div>
-				<div class="tableaux">
-					<img class="blc" src="./assets/Shape (5).svg" alt="tableaux" />
-					<div class="bouton-tableaux">
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
-                        <button class="btn-tableaux"></button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>draft-tasks</title>
+</head>
+<body>
+    <div class="opacity"></div>
+    <header>
+        <button class="headerBtn" id="menu">MENU</button>
+        <img src="./assets/logoBase.svg" alt="logoBase">
+        <button class="headerBtn">RESTART</button>
+    </header>
+    <main>
+        <!-- <section class="secMenu">
+            <div class="divTotalMenu">
+            <img class="imgLogoBase" src="./assets/logoBase.svg" alt="logo de base">
+                <div class="divBtnMenu">
+                    <button class="btnPlay"> PLAY VS PLAYER <img src="./assets/player-vs-player.svg" alt="player vs player"></button>
+                    <button class="btnRules">GAME RULES</button>
+                </div>
+            </div>
+        </section> -->
+        <div class="divImgCursor">
+            <img class="imgCursor" src="./assets/cursorRed.svg" alt="cursor">
+        </div>
+        <section class="secJeu">
+            <div class="divScore">
+                <img class="imgPlayer" src="./assets/player-one.svg" alt="player one">
+                <h2>PLAYER 1</h2>
+                <p class="score scoreOne">0</p>
+            </div>
+            <section class="secLayer">
+                <img class="imgGrid" src="./assets/gird.svg" alt="grid">
+                <div class="grid">
+                    <div class="divGridColumn">
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
                     </div>
-                    <img class="noir" src="./assets/Shape (6).svg" alt="tableaux">
-				</div>
-				<div class="score">
-					<img src="./assets/player-two.svg" alt="player1" />
-					<div class="player">
-						<h2>PLAYER 2</h2>
-						<p>23</p>
-					</div>
-				</div>
-			</section>
-                <!-- <section class="partie2">
-                    <div class="chronometre">
-                        <h3>PLAYER 1'S TURN</h3>
-                        <p>3s</p>
+                    <div class="divGridColumn">
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
                     </div>
-                </section> -->
-		</main>
-		<script src="app.js"></script>
-	</body>
+                    <div class="divGridColumn">
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                    </div>
+                    <div class="divGridColumn">
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                    </div>
+                    <div class="divGridColumn">
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                    </div>
+                    <div class="divGridColumn">
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                    </div>
+                    <div class="divGridColumn">
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                        <button class="btnGrid"><img class="imgBtnGrid" src="" alt=""></button>
+                    </div>
+                </div>
+                <img class="imgShadowGrid" src="./assets/shadowGrid.svg" alt="shadowGrid">
+            </section>
+            <div class="divScore">
+                <img class="imgPlayer" src="./assets/player-two.svg" alt="player two">
+                <h2>PLAYER 2</h2>
+                <p class="score scoreTwo">0</p>
+            </div>
+        </section>
+        <div class="divFooter">
+            <div class="chronometre">
+                <h2 class="chronoPlayerH2">PLAYER <span class="spanPlayerTurn">1</span>'S TURN</h2>
+                <p class="chronoPointPlayer"></p>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
 </html>
